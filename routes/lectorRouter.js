@@ -72,4 +72,8 @@ router.post('/abrir-huella', (req, res) => {
   });
 });
 
+router.get('/ping', (req, res) => {
+  res.json({ mensaje: '🟢 Contenedor activo y escuchando' });
+});
+
 export default router;
